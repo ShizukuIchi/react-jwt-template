@@ -10,3 +10,10 @@ React JWT Template
 * react-redux
 * redux-thunk
 * styled-components
+
+```
+// .env
+// fake api endpoint
+NODE_PATH=src/
+API=http://localhost:4000
+```
