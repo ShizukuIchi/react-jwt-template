@@ -8,12 +8,11 @@ class HomePage extends React.Component {
   componentDidMount() {
     this.props.dispatch(userActions.getAll());
   }
-
   render() {
     const { user, users } = this.props;
     return (
       <div>
-        <h1>Hi {user.firstName}!</h1>
+        <h1>{user.firstName}, welcome!</h1>
         {users.loading && <em>Loading users...</em>}
         {users.items && (
           <ul>
